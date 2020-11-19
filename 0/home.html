@@ -1,0 +1,103 @@
+<div id=D__ID>
+    <div class="container mt-95 mb-3">
+            <div class="row">
+
+            <!-- form container start -->
+
+            <div class="col-12 col-lg-7 col-md-11 col-sm-12 mx-auto formbox p-4 bg-white rounded">
+                <div class="row">
+                    <div class="col-12">
+                            <img src="images/incosact.png" class="mx-auto d-block">
+                            <h3 class="bg-white">Atrial Fibrillation Sleep Apnea International Survey</h3>
+                    </div>
+                    <div class="col-6-sm pl-5">
+                        <div class="pb-3">
+                                <button type="button" id="btn1__ID" class="btn btn-secondary btn-lg">English survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                        <div class="pb-3">
+                                <button type="button" id="btn2__ID" class="btn btn-secondary btn-lg">Portuguese
+                                survey</button>
+                        </div>
+                        <div class="pb-3">
+                                <button type="button" id="btn3__ID" class="btn btn-secondary btn-lg">Spanish
+                                survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+                        </div>
+                        <div class="pb-3">
+                                <button type="button" id="btn4__ID" class="btn btn-secondary btn-lg">Turkish
+                                survey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+                        </div>
+                    </div>
+                    <div class="col-6-sm pl-5">
+                        <div class="pb-3">
+                            <button type="button" id="btn5__ID" class="btn btn-secondary btn-lg">Japanese
+                            survey&nbsp;&nbsp;&nbsp;</button><br>
+                        </div>
+                        <div class="pb-3">
+                        <button type="button" id="btn6__ID" class="btn btn-secondary btn-lg">Canadian French
+                            survey&nbsp;&nbsp;&nbsp;</button><br>
+                        </div>
+                        <div class="pb-3">
+                            <button type="button" id="btn7__ID" class="btn btn-secondary btn-lg">French
+                            survey&nbsp;&nbsp;&nbsp;</button><br>
+                        </div>
+                        <div class="pb-3">
+                            <button type="button" id="btn8__ID" class="btn btn-secondary btn-lg">German
+                            survey&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            var this_module = $vm.module_list[$vm.vm['__ID'].name];
+            var prefix = this_module.prefix; if (prefix == undefined) prefix = "";
+            //-------------------------------------
+            $('#btn1__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-english-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn2__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-portuguese-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn3__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-spanish-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn4__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-turkish-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn5__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-japanese-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn6__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-canadian-french-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn7__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-french-form", '', {});
+            })
+            //-------------------------------------
+            $('#btn8__ID').on('click', function () {
+                $vm.load_module_v2("questionnaire-german-form", '', {});
+            })
+            //-------------------------------------
+            //$('#D__ID').css('min-height',$vm.min_height);
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID {
+            height: 100%;
+            animation: vm_module_fadein 1.0s;
+            overflow: auto;
+        }
+    </style>
+    VmInclude:__CURRENT_PATH__/../../m/task-form.css
+
+</div>
